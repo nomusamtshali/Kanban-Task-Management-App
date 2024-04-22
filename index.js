@@ -1,6 +1,7 @@
 // TASK: import helper functions from utils
-// TASK: import initialData
 import { getTasks, createNewTask, patchTask, putTask, deleteTask } from "./utils/taskFunctions"; // used the import function to load and incorporate external file (taskFunctions.js) into this current file (index.js). 
+
+// TASK: import initialData
 import { initialData } from "./initialData"; //  used the import function to load and incorporate external file (initialData.js) into this current file (index.js). 
 
 /*************************************************************************************************************************************************
