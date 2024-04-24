@@ -2,7 +2,7 @@
 import { getTasks, createNewTask, patchTask, putTask, deleteTask } from "./utils/taskFunctions.js"; // used the import function to load and incorporate external file (taskFunctions.js) into this current file (index.js). 
 
 // TASK: import initialData
-import { initialData } from "./initialData"; //  used the import function to load and incorporate external file (initialData.js) into this current file (index.js). 
+import { initialData } from "./initialData.js"; //  used the import function to load and incorporate external file (initialData.js) into this current file (index.js). 
 
 /*************************************************************************************************************************************************
  * FIX BUGS!!!
