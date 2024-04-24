@@ -202,8 +202,12 @@ function addTask(event) {
 
   //Assign user input to the task object
     const task = {
-      
+      title: document.getElementById('title-input').value.trim(), // used the '.trim' string method in order to remove whitespace characters from the beginning and end of the/a string.
+      description: document.getElementById('desc-input').value.trim(), // used the '.trim' string method in order to remove whitespace characters from the beginning and end of the/a string.
+      status: document.getElementById('select-status').value,
+      board: activeBoard // assigned the current/active board to the board property of the task object.
     };
+
     const newTask = createNewTask(task);
     if (newTask) {
       addTaskToUI(newTask);
