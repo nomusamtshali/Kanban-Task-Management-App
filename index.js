@@ -113,7 +113,7 @@ function refreshTasksUI() {
 // Styles the active board by adding an active class
 // TASK: Fix Bugs
 function styleActiveBoard(boardName) {
-  document.querySelectorAll('.board-btn').foreach(btn => { 
+  document.querySelectorAll('.board-btn').forEach(btn => { // changed lowercase 'e' to uppercase 'E' because the 'ForEach' method is written in camel case because it's case sensitive / because of it's naming convention
     
     if(btn.textContent === boardName) {
       btn.add('active') 
