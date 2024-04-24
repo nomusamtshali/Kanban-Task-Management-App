@@ -250,12 +250,15 @@ function openEditTaskModal(task) {
   document.getElementById('edit-select-status').value = task.status;
 
   // Get button elements from the task modal
-  const saveTaskButton = document.getElementById('save-task-changes-btn');
+  const saveTaskChangesButton = document.getElementById('save-task-changes-btn');
   const deleteTaskButton = document.getElementById('delete-task-btn');
   const cancelTask = document.getElementById('cancel-edit-btn');
 
   // Call saveTaskChanges upon click of Save Changes button
- 
+ saveTaskChangesButton.addEventListener('click', () => {
+  saveTaskChanges(task.id); // saveTaskChanges function uses the task ID to update the task with the edited values and saves it 
+  toggleModal(false, elements.editTaskModal); // passing 'false' will close the editTaskModal modal once the task changes have been saved.
+ })
 
   // Delete task using a helper function and close the task modal
 
