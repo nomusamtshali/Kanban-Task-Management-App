@@ -232,7 +232,13 @@ function toggleSidebar(show) {
 } 
 
 function toggleTheme() {
- 
+ if (localStorage.getItem('light-theme') == 'enable') {
+  document.body.classList.toggle('light-theme', false);
+  localStorage.setItem('light-theme', 'disable');
+ } else {
+  document.body.classList.toggle('light-theme', true);
+  localStorage.setItem('light-theme', 'enable')
+ }
 }
 
 
