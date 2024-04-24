@@ -211,7 +211,7 @@ function addTask(event) {
     const newTask = createNewTask(task);
     if (newTask) {
       addTaskToUI(newTask);
-      toggleModal(false);
+      toggleModal(false); 
       elements.filterDiv.style.display = 'none'; // Also hide the filter overlay
       event.target.reset();
       refreshTasksUI();
@@ -220,8 +220,16 @@ function addTask(event) {
 
 
 function toggleSidebar(show) {
- 
-}
+ if (show) {
+  elements.sidebardiv.style.display = 'block';
+  elements.showSideBarBtn.style.display = 'none';
+  localStorage.setItem('showSideBar', 'true');
+ } else {
+  elements.sidebardiv.style.display = 'none';
+  elements.showSideBarBtn.style.display = 'block';
+  localStorage.setItem('showSideBar', 'false');
+ }
+} 
 
 function toggleTheme() {
  
