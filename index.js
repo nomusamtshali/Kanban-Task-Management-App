@@ -181,7 +181,7 @@ function setupEventListeners() {
 // Toggles tasks modal
 // Task: Fix bugs
 function toggleModal(show, modal = elements.modalWindow) {
-  modal.style.display = show ? 'block' => 'none'; 
+  modal.style.display = show ? 'block' : 'none'; // changed the arrow function to a colon in order to define the ternary operator correctly
 }
 
 /*************************************************************************************************************************************************
