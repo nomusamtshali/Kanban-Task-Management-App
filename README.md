@@ -1,6 +1,6 @@
 ### [JSL11] Agile Board - Kanban Task Management App
 
-LOOM Presentation link: []
+LOOM Presentation link: [https://www.loom.com/share/a15cd9375a5742608fc4bee3abb04f8f?sid=d4a642a6-68cb-432b-afc8-ffc06c2621de]
 
 # Project Overview
 - In this final project I was tasked to tackle the provided user stories to both identify and fix bugs in the code, as well as to develop my own functions to extend the application's capabilities. Key assignments included importing utility functions, initializing data, and diving into debugging tasks such as setting up data correctly in local storage, dynamically displaying boards and tasks, and enhancing user interactions.
