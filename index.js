@@ -286,6 +286,7 @@ function saveTaskChanges(taskId) {
   };
 
   // Update task using a helper function
+  patchTask(taskId, editedTask); // patchTask function updates the task with the 'taskId' using the properties of the 'editedTask' object.
 
   // Close the modal and refresh the UI to reflect the changes
 
