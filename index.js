@@ -267,6 +267,8 @@ function openEditTaskModal(task) {
    refreshTasksUI(); // update the user interface to reflect the changes made after deleting the task
  });
 
+ cancelTask.addEventListener('click', () => toggleModal(false, elements.editTaskModal)); // passing 'false' will close the editTaskModal modal, allowing the user to cancel any edits made to the task.
+
   toggleModal(true, elements.editTaskModal); // Show the edit task modal
 }
 
