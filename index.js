@@ -279,7 +279,11 @@ function saveTaskChanges(taskId) {
   const status = document.getElementById('edit-select-status').value;
 
   // Create an object with the updated task details
-
+  const editedTask = {
+    title: title, // assigned the value of the 'title' variable to the 'title' property of the editedTask object
+    description: description, // assigned the value of the 'description' variable to the 'description' property of the editedTask object
+    status: status, // assigned the value of the 'status' variable to the 'status' property of the editedTask object
+  };
 
   // Update task using a hlper functoin
  
