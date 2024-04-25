@@ -289,8 +289,8 @@ function saveTaskChanges(taskId) {
   patchTask(taskId, editedTask); // patchTask function updates the task with the 'taskId' using the properties of the 'editedTask' object.
 
   // Close the modal and refresh the UI to reflect the changes
-
-  refreshTasksUI();
+  toggleModal(false, elements.editTaskModal); // passing 'false' will close the editTaskModal modal, allowing the user to exit the task editing mode
+  refreshTasksUI(); // updating the user interface to reflect the changes made after editing or deleting a task
 }
 
 /*************************************************************************************************************************************************/
