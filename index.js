@@ -18,6 +18,8 @@ function initializeData() {
   }
 }
 
+initializeData(); // calling out the function
+
 // TASK: Get elements from the DOM
 const elements = { 
   headerBoardName: document.getElementById('header-board-name'),
