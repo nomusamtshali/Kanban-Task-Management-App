@@ -76,7 +76,7 @@ function displayBoards(boards) {
 // TASK: Fix Bugs
 function filterAndDisplayTasksByBoard(boardName) {
   const tasks = getTasks(); // Fetch tasks from a simulated local storage function
-  const filteredTasks = tasks.filter(task => task.board = boardName);
+  const filteredTasks = tasks.filter(task => task.board == boardName); // instead of assigning a value, I used double equals operator (==) for comparison and to check if the values on both sides are equal. 
 
   // Ensure the column titles are set outside of this function or correctly initialized before this function runs
 
