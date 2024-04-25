@@ -240,9 +240,13 @@ function toggleTheme() {
  if (localStorage.getItem('light-theme') == 'enable') {
   document.body.classList.toggle('light-theme', false);
   localStorage.setItem('light-theme', 'disable');
+  let img = document.getElementById('logo');
+  img.src = './assets/logo-dark.svg';
  } else {
   document.body.classList.toggle('light-theme', true);
-  localStorage.setItem('light-theme', 'enable')
+  localStorage.setItem('light-theme', 'enable');
+  let img = document.getElementById('logo');
+  img.src = './assets/logo-light.svg';
  }
 }
 
