@@ -118,11 +118,14 @@ function styleActiveBoard(boardName) {
   document.querySelectorAll('.board-btn').forEach(btn => { // changed lowercase 'e' to uppercase 'E' because the 'ForEach' method is written in camel case because it's case sensitive / because of it's naming convention
     
     if(btn.textContent === boardName) {
-      btn.add('active') 
-    }
+      btn.classList.add('active') 
+    } // added the classList property in order to manipulate the element's classes
+    // with 'classList.add' the specified class will be added to the element
+    // we're making the class of the button 'active'
     else {
-      btn.remove('active'); 
-    }
+      btn.classList.remove('active'); 
+    } // added the classList property in order to manipulate the element's classes
+    // with 'classList.remove' the specified class will be removed from the element
   });
 }
 
