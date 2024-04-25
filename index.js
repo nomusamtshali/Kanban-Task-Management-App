@@ -258,10 +258,14 @@ function openEditTaskModal(task) {
  saveTaskChangesButton.addEventListener('click', () => {
   saveTaskChanges(task.id); // saveTaskChanges function uses the task ID to update the task with the edited values and saves it 
   toggleModal(false, elements.editTaskModal); // passing 'false' will close the editTaskModal modal once the task changes have been saved.
- })
+ });
 
   // Delete task using a helper function and close the task modal
-
+ deleteTaskButton.addEventListener('click', () => {
+   deleteTask(task.id); // the deleteTask function uses the task ID to remove the task 
+   toggleModal(false, elements.editTaskModal); // passing 'false' will close the editTaskModal modal once the task has been deleted.
+   refreshTasksUI(); // update the user interface to reflect the changes made after deleting the task
+ });
 
   toggleModal(true, elements.editTaskModal); // Show the edit task modal
 }
