@@ -285,8 +285,7 @@ function saveTaskChanges(taskId) {
     status: status, // assigned the value of the 'status' variable to the 'status' property of the editedTask object
   };
 
-  // Update task using a hlper functoin
- 
+  // Update task using a helper function
 
   // Close the modal and refresh the UI to reflect the changes
 
