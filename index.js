@@ -316,3 +316,6 @@ function init() {
   document.body.classList.toggle('light-theme', isLightTheme);
   fetchAndDisplayBoardsAndTasks(); // Initial display of boards and tasks
 }
+
+document.querySelector('.side-bar-bottom').style.position = 'fixed';
+document.querySelector('.side-bar-bottom').style.bottom = '40px'; // targeted an HTML element with the class "side-bar-bottom" and modified its CSS styles to create a fixed position 40 pixels from the bottom of the viewport
