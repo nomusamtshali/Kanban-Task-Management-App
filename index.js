@@ -150,7 +150,7 @@ function addTaskToUI(task) {
   taskElement.textContent = task.title; // Modify as needed
   taskElement.setAttribute('data-task-id', task.id);
   
-  tasksContainer.appendChild(); 
+  tasksContainer.appendChild(taskElement); // added the missing element as '.appendChild' takes a single argument - which is the element to be appended as a child
 }
 
 
